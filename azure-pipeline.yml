@@ -30,8 +30,8 @@ stages:
               sudo apt-get update && sudo apt-get install terraform -y
               cd dev
               terraform init
-              terraform plan -out=tfplan 
-              terraform apply -auto-approve -var-file=dev.tf tfplan
+              terraform plan 
+              terraform apply -auto-approve -var-file=dev.tf 
             displayName: 'Deploy to Dev'
   
   - stage: QA
