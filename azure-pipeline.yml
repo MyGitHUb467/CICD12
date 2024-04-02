@@ -30,7 +30,7 @@ stages:
               sudo apt-get update && sudo apt-get install terraform -y
               cd dev
               terraform init
-              terraform plan -out=tfplan -var-file=dev.tf
+              terraform plan -out=tfplan -var-file=dev.tfvars
               terraform apply -auto-approve tfplan
             displayName: 'Deploy to Dev'
   
@@ -48,7 +48,7 @@ stages:
               sudo apt-get update && sudo apt-get install terraform -y
               cd qa
               terraform init
-              terraform plan -out=tfplan -var-file=qa.tf
+              terraform plan -out=tfplan -var-file=qa.tfvars
               terraform apply -auto-approve tfplan
             displayName: 'Deploy to QA'
 
@@ -66,7 +66,7 @@ stages:
               sudo apt-get update && sudo apt-get install terraform -y
               cd preprod
               terraform init
-              terraform plan -out=tfplan -var-file=preprod.tf
+              terraform plan -out=tfplan -var-file=preprod.tfvars
               terraform apply -auto-approve tfplan
             displayName: 'Deploy to Pre-Prod'
 
@@ -84,6 +84,6 @@ stages:
               sudo apt-get update && sudo apt-get install terraform -y
               cd prod
               terraform init
-              terraform plan -out=tfplan -var-file=prod.tf
+              terraform plan -out=tfplan -var-file=prod.tfvars
               terraform apply -auto-approve tfplan
             displayName: 'Deploy to Prod'
