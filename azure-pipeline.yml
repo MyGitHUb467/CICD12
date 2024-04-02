@@ -32,4 +32,4 @@ stages:
               terraform init
               terraform plan -out=tfplan
               terraform apply -auto-approve tfplan
-            displayName: 'Deploy to Dev'
+            displayName: 'Deploying'
