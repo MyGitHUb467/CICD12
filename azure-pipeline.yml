@@ -31,7 +31,7 @@ stages:
               cd dev
               terraform init
               terraform plan -out=tfplan 
-              terraform apply -auto-approve tfplan -var-file=dev.tf
+              terraform apply -auto-approve -var-file=dev.tf tfplan
             displayName: 'Deploy to Dev'
   
   - stage: QA
