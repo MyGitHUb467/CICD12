@@ -21,3 +21,49 @@ module "module_dev" {
     storage_account_tier             = "Standard"
     storage_account_replication_type = "LRS"
 }
+module "module_qa" {
+    source = "./modules"
+    resource_group_name              = "qa-resource-group"
+    location                         = "West US"
+    vnet                             = "qa-vnet1"
+    vm_name                          = "qa-vm"
+    vm_size                          = "Standard_DS2_v2"
+    key_vault_name                   = "qa-keyy-vault"
+    nicname                          = "qa12NIC"
+    subnet                           = "qa-subnet"
+    storage_account_name             = "storage91987"
+    storage_account_tier             = "Standard"
+    storage_account_replication_type = "GRS"
+}
+
+module "module_preprod" {
+    source = "./modules"
+    resource_group_name              = "preprod-resource-group"
+    location                         = "North Europe"
+    vnet                             = "preprod-vnet1"
+    vm_name                          = "preprod-vm"
+    vm_size                          = "Standard_DS2_v2"
+    key_vault_name                   = "preprod-keyy-vault"
+    nicname                          = "preprod12NIC"
+    subnet                           = "preprod-subnet"
+    storage_account_name             = "storageaccount92987"
+    storage_account_tier             = "Standard"
+    storage_account_replication_type = "GRS"
+
+}
+
+module "module_prod" {
+    source = "./modules"
+    resource_group_name          = "prod-resource-group"
+    location                         = "Central US"
+    vnet                             = "prod-vnet1"
+    vm_name                          = "prod-vm"
+    vm_size                          = "Standard_DS3_v2"
+    key_vault_name                   = "prod-keyy-vault"
+    nicname                          = "prod12NIC"
+    subnet                           = "Prod-subnet"
+    storage_account_name             = "storageaccount93987"
+    storage_account_tier             = "Standard"
+    storage_account_replication_type = "GRS"
+
+}
