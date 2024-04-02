@@ -8,7 +8,7 @@ module "module_qa" {
     key_vault_name                   = "qa-keyy-vault"
     nicname                          = "qa12NIC"
     subnet                           = "qa-subnet"
-    storage_account_name             = "qa12storageaccount"
+    storage_account_name             = "storage92987"
     storage_account_tier             = "Standard"
     storage_account_replication_type = "GRS"
 }
