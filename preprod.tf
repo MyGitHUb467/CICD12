@@ -8,7 +8,7 @@ module "module_preprod" {
     key_vault_name                   = "preprod-keyy-vault"
     nicname                          = "preprod12NIC"
     subnet                           = "preprod-subnet"
-    storage_account_name             = "preprod12storageaccount"
+    storage_account_name             = "storage90987"
     storage_account_tier             = "Standard"
     storage_account_replication_type = "GRS"
 
