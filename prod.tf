@@ -8,7 +8,7 @@ module "module_prod" {
     key_vault_name                   = "prod-keyy-vault"
     nicname                          = "prod12NIC"
     subnet                           = "Prod-subnet"
-    storage_account_name             = "prod12storageaccount"
+    storage_account_name             = "storage91987"
     storage_account_tier             = "Standard"
     storage_account_replication_type = "GRS"
 
