@@ -1,4 +1,4 @@
-module "module_qa" {
+{
     source = "./modules"
     resource_group_name              = "qa-resource-group"
     location                         = "West US"
