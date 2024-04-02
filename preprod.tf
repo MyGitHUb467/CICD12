@@ -1,4 +1,4 @@
-module "module_preprod" {
+{
     source = "./modules"
     resource_group_name              = "preprod-resource-group"
     location                         = "North Europe"
