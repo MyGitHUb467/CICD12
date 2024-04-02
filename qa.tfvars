@@ -1,4 +1,3 @@
-source = "./modules"
 resource_group_name              = "qa-resource-group"
 location                         = "West US"
 vnet                             = "qa-vnet1"
