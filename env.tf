@@ -16,7 +16,7 @@ module "module_dev" {
     key_vault_name                   = "dev-key-vault"
     nicname                          = "dev NIC"
     subnet                           = "dev subnet"
-    storage_account_name             = "devstorageaccount"
+    storage_account_name             = "storage90987"
     storage_account_tier             = "Standard"
     storage_account_replication_type = "LRS"
 }
@@ -30,7 +30,7 @@ module "module_qa" {
     key_vault_name                   = "qa-key-vault"
     nicname                          = "qa NIC"
     subnet                           = "qa subnet"
-    storage_account_name             = "qastorageaccount"
+    storage_account_name             = "storage91987"
     storage_account_tier             = "Standard"
     storage_account_replication_type = "GRS"
 }
@@ -44,7 +44,7 @@ module "module_preprod" {
     key_vault_name                   = "preprod-key-vault"
     nicname                          = "preprod NIC"
     subnet                           = "preprod subnet"
-    storage_account_name             = "preprodstorageaccount"
+    storage_account_name             = "storage92987"
     storage_account_tier             = "Standard"
     storage_account_replication_type = "GRS"
 
@@ -59,7 +59,7 @@ module "module_prod" {
     key_vault_name                   = "prod-key-vault"
     nicname                          = "prod NIC"
     subnet                           = "Prod subnet"
-    storage_account_name             = "prodstorageaccount"
+    storage_account_name             = "storage93987"
     storage_account_tier             = "Premium"
     storage_account_replication_type = "ZRS"
 
