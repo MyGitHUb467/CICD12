@@ -17,7 +17,7 @@ module "module_dev" {
     key_vault_name                   = "dev-keyy-vault"
     nicname                          = "dev12NIC"
     subnet                           = "dev-subnet"
-    storage_account_name             = "Storage90987"
+    storage_account_name             = "storage90987"
     storage_account_tier             = "Standard"
     storage_account_replication_type = "LRS"
 }
