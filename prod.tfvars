@@ -1,4 +1,3 @@
-source = "./modules"
 resource_group_name          = "prod-resource-group"
 location                         = "Central US"
 vnet                             = "prod-vnet1"
