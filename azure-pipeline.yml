@@ -31,7 +31,7 @@ stages:
               cd dev
               terraform init
               terraform plan -out=tfplan 
-              terraform apply -auto-approve tfplan -var-file=dev.tf
+              terraform apply -auto-approve tfplan -var-file=dev.tfvars
             displayName: 'Deploy to Dev'
   
   - stage: QA
@@ -49,7 +49,7 @@ stages:
               cd qa
               terraform init
               terraform plan -out=tfplan
-              terraform apply -auto-approve tfplan -var-file=qa.tf
+              terraform apply -auto-approve tfplan -var-file=qa.tfvars
             displayName: 'Deploy to QA'
 
   - stage: PreProd
@@ -67,7 +67,7 @@ stages:
               cd preprod
               terraform init
               terraform plan -out=tfplan
-              terraform apply -auto-approve tfplan -var-file=preprod.tf
+              terraform apply -auto-approve tfplan -var-file=preprod.tfvars
             displayName: 'Deploy to Pre-Prod'
 
   - stage: Prod
@@ -85,5 +85,5 @@ stages:
               cd prod
               terraform init
               terraform plan -out=tfplan
-              terraform apply -auto-approve tfplan -var-file=prod.tf
+              terraform apply -auto-approve tfplan -var-file=prod.tfvars
             displayName: 'Deploy to Prod'
