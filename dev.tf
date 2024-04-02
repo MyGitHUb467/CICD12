@@ -1,4 +1,4 @@
-module "module_dev" {
+{
     source = "./modules"
     resource_group_name              = "dev-resource-group"
     location                         = "East US"
