@@ -34,4 +34,8 @@ Feedback and contributions are welcome! If you encounter any issues or have sugg
 **<h2>Results:</h2>**
 ![Example Image](Picture1.jpg)
 ![Example Image](Picture2.jpg)
+![Example Image](Dev-rg.jpg)
+![Example Image](Preprod-rg.jpg)
+![Example Image](qa-rg.jpg)
+![Example Image](Prod-rg.jpg)
 
