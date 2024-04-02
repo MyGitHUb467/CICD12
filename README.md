@@ -3,6 +3,7 @@
 The objective of this project is to set up Continuous Integration (CI) and Continuous Deployment (CD) pipelines using Azure Pipelines for provisioning infrastructure across multiple environments (Dev, QA, Preprod, and Prod) using Terraform. The infrastructure includes Virtual Machines (VMs), Key Vault, and Storage Accounts.
 
 **<h3>FILES<h3>:**
+
 **<h5>env.tf:</h5>** Defines the Terraform modules for provisioning infrastructure across different environments.
 **<h5>main.tf:</h5>** Defines the Azure resources (Resource Group, Virtual Network, Subnet, Network Interface, Virtual Machine, Key Vault, Storage Account) using Terraform.
 **<h5>variables.tf:</h5>** Defines variables used in the Terraform configuration for customization of resource names, locations, sizes, etc.
