@@ -32,6 +32,6 @@ FEEDBACK:
 Feedback and contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 **<h2>Results:</h2>**
-![Example Image](Picture1.png)
-![Example Image](Picture2.png)
+![Example Image](Picture1.jpg)
+![Example Image](Picture2.jpg)
 
