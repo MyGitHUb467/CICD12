@@ -1,4 +1,3 @@
-source = "./modules"
 resource_group_name              = "preprod-resource-group"
 location                         = "North Europe"
 vnet                             = "preprod-vnet1"
